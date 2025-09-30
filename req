@@ -1,0 +1,18 @@
+curl --location 'http://127.0.0.1:5000/predict' \
+--header 'Content-Type: application/json' \
+--data '{
+  "features": {
+    "engine_hp": 250,
+    "owner_count": 5,
+    "vehicle_age": 15,
+    "mileage_per_year": 236643,
+    "brand_popularity": 0.039921,
+    "make": "Lexus",
+    "fuel_type": "Gasoline",
+    "transmission": "Manual",
+    "drivetrain": "FWD",
+    "accident_history": "Minor",
+    "seller_type": "Dealer",
+    "condition": "Good"
+  }
+}'
